@@ -3,7 +3,7 @@ os: linux
 
 files:
   - source: /
-    destination: /home/ubuntu/samplepython
+    destination: /home/ubuntu/samplepython/
 
 hooks:
   ApplicationStop:
@@ -16,7 +16,8 @@ hooks:
       timeout: 300
       runas: ubuntu
 
-  AfterInstall:
+  ApplicationStart:
     - location: scripts/start_container.sh
       timeout: 300
       runas: ubuntu
+
