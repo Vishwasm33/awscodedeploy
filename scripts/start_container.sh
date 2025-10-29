@@ -18,3 +18,4 @@ fi
 sudo docker run -d -p 5000:5000 --name samplepython vishwasm0881/simple-python-flask-app:latest
 
 echo "Container started successfully!"
+
